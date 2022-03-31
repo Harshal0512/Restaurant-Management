@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./loginPage.css";
 import Login from "../../components/loginPageComponents/Login/Login";
-import MainHeader from "../../components/loginPageComponents/MainHeader/MainHeader";
-import Main from "../main/mainPage";
+//import MainHeader from "../../components/loginPageComponents/MainHeader/MainHeader";
+//import Main from "../main/mainPage";
 
 const LoginPage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -29,10 +29,10 @@ const LoginPage = () => {
 
   return (
     <React.Fragment>
-      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+      {/*<MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />*/}
       <main>
         {!isLoggedIn && <Login onLogin={loginHandler} />}
-        {isLoggedIn && <Main></Main>}
+        {/*{isLoggedIn && <Main></Main>}*/}
       </main>
     </React.Fragment>
   );
